@@ -1,0 +1,17 @@
+# Large archive
+0424FGSM_copy.tar.gz
+
+# Datasets / checkpoints / raw data (excluded per project decision)
+data/
+mnist/
+checkpoints/
+
+# Python
+__pycache__/
+*.pyc
+
+# Jupyter
+.ipynb_checkpoints/
+
+# OS
+.DS_Store
