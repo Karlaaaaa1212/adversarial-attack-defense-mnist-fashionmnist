@@ -1,7 +1,6 @@
 # 對抗攻防實驗 · MNIST / FashionMNIST
 
 CNN 影像分類模型的對抗攻擊（FGSM / iFGSM / C&W）與線上對抗訓練防禦。
-參考：K. Chowdhury, *Adversarial Machine Learning: Attacking and Safeguarding Image Datasets*.
 
 ## 三大區
 
