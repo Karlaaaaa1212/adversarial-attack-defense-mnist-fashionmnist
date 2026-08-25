@@ -61,12 +61,3 @@ adversarial-attack-defense-mnist-fashionmnist/
 
 > 對抗樣本在 `model.eval()`（關 dropout、確定性）下即時生成、`detach()` 後才拿去更新權重；
 > 輸入梯度與權重梯度兩段互不干擾。模型輸出為 `log_softmax`，損失一律用 `NLLLoss`。
-
-### 與舊版的差異
-
-根目錄下的 `threeTypes_attack.py`、`fgsm_attack.py`、`cw_attack.py`、`ifgsm_attack.py` 等為歷史版本，
-已被 `src/` 下對應模組取代，**不再使用**（保留僅供對照，新流程請一律以 `notebooks/attack_defense_pipeline.ipynb` + `src/` 為主）。
-
-舊的 `threeTypes_attack.py` 防禦邏輯是錯誤的：① 從**測試集**收集對抗樣本（資料洩漏）、
-② 只留下已誤判的樣本、③ 對**既有預訓練模型微調**而非從頭訓練、④ 在 `log_softmax` 輸出上誤用
-`CrossEntropyLoss`、⑤ 只產生單一混合模型。`src/defense/adv_train.py` 已全部修正上述問題。
