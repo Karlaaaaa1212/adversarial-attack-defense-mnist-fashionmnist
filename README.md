@@ -1,7 +1,5 @@
 # 對抗攻防實驗 · MNIST / FashionMNIST
 
-[github.com/Karlaaaaa1212/adversarial-attack-defense-mnist-fashionmnist](https://github.com/Karlaaaaa1212/adversarial-attack-defense-mnist-fashionmnist)
-
 CNN 影像分類模型的對抗攻擊（FGSM / iFGSM / C&W）與線上對抗訓練防禦。
 參考：K. Chowdhury, *Adversarial Machine Learning: Attacking and Safeguarding Image Datasets*.
 
